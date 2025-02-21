@@ -29,13 +29,15 @@ def main():
     try:
         argc = len(sys.argv)
         assert argc <= 2, "more than one argument provided"
-        print("This is from the main()")
         if argc == 2 and len(sys.argv[1]):
-            count_char_types(sys.argv[1])
+            text = sys.argv[1]
         else:
-            count_char_types(input("What is the text to count?\n"))
+            text = input("What is the text to count?\n")
+        count_char_types(text)
     except AssertionError as e:
         print(f"AssertionError: {e}")
+    except (KeyboardInterrupt, EOFError):
+        sys.exit()
 
 
 if __name__ == "__main__":
