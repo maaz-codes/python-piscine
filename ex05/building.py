@@ -3,6 +3,15 @@ import string
 
 
 def count_char_types(text: str):
+    """
+    Analyze a string and print counts of different character types.
+
+    Parameters:
+        text (str): The input string to analyze
+
+    Returns:
+        None: The function prints the results directly and does not return a value
+    """
     total_len = len(text)
     upr_len = lwr_len = pun_len = sps_len = dgt_len = 0
     if (total_len > 0):
