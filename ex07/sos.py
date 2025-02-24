@@ -2,6 +2,19 @@ import sys
 
 
 def morse_code_encoder(text: str) -> str:
+    """
+    Converts a text string into Morse code.
+
+    Args:
+        text (str): The input text to be converted to Morse code.
+
+    Returns:
+        str: The Morse code representation of the input text.
+
+    Raises:
+        ValueError: If the input text contains anything other than
+        A-Z, 0-9 and space.
+    """
     NESTED_MORSE = {
         'A': '.- ', 'B': '-... ', 'C': '-.-. ', 'D': '-.. ', 'E': '. ',
         'F': '..-. ', 'G': '--. ', 'H': '.... ', 'I': '.. ', 'J': '.--- ',
