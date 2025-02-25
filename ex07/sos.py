@@ -4,16 +4,6 @@ import sys
 def morse_code_encoder(text: str) -> str:
     """
     Converts a text string into Morse code.
-
-    Args:
-        text (str): The input text to be converted to Morse code.
-
-    Returns:
-        str: The Morse code representation of the input text.
-
-    Raises:
-        ValueError: If the input text contains anything other than
-        A-Z, 0-9 and space.
     """
     NESTED_MORSE = {
         'A': '.- ', 'B': '-... ', 'C': '-.-. ', 'D': '-.. ', 'E': '. ',
@@ -40,7 +30,6 @@ def main():
             len(sys.argv) == 2 and
             sys.argv[1].replace(' ', '').isalnum()
         ), "the arguments are bad"
-        print("From the main")
         print(morse_code_encoder(str(sys.argv[1])))
     except AssertionError as e:
         print(f"AssertionError: {e}")

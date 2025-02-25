@@ -1,6 +1,5 @@
 from typing import Generator
 
-
 def ft_tqdm(lst: range) -> Generator[int, None, None]:
     max_step = 10
     bar_end = lst.stop - 1
