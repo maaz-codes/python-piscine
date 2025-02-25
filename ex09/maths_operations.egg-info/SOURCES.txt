@@ -1,0 +1,9 @@
+README.md
+setup.py
+maths_op/__init__.py
+maths_op/arithmetic.py
+maths_op/logical.py
+maths_operations.egg-info/PKG-INFO
+maths_operations.egg-info/SOURCES.txt
+maths_operations.egg-info/dependency_links.txt
+maths_operations.egg-info/top_level.txt
